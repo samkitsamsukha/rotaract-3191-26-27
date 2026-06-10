@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const brandSections = [
     {
@@ -101,8 +102,8 @@ export default function BrandCenter() {
                                         </div>
 
                                         <div className="mt-5 flex justify-center align-bottom">
-                                            <a
-                                                href={section.link}
+                                            <NavLink
+                                                to={section.link}
                                                 className="
             group relative inline-flex items-center gap-2
             rounded-xl border border-slate-300 bg-white
@@ -130,7 +131,7 @@ export default function BrandCenter() {
                                                 </svg>
 
                                                 <span className="absolute inset-0 rounded-xl bg-linear-to-r from-[#d41367]/0 via-[#d41367]/10 to-[#d41367]/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                     </article>
                                 ))}
