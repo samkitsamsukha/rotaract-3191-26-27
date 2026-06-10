@@ -242,8 +242,8 @@ function Logos() {
     const modalFiles = useMemo(() => modalCollection?.variants ?? [], [modalCollection])
 
     return (
-        <div className="min-h-screen bg-[#d41367] text-white">
-            <div className="relative min-h-screen overflow-hidden bg-[#d41367] text-pink-50">
+        <div className="min-h-screen text-white">
+            <div className="relative min-h-screen overflow-hidden text-pink-50">
                 {/* Cockpit Grid Overlay */}
                 <div className="pointer-events-none absolute inset-0 opacity-[0.08]">
                     <div className="absolute left-0 top-1/4 h-px w-full bg-white" />

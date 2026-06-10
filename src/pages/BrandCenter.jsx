@@ -34,11 +34,7 @@ const cockpitMetrics = [
 export default function BrandCenter() {
 
     return (
-        <div className="relative min-h-screen overflow-hidden bg-[#d41367] text-slate-900">
-            <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(212,19,103,0.16),transparent_22%),radial-gradient(circle_at_82%_12%,rgba(15,23,42,0.08),transparent_18%),linear-gradient(180deg,#ffffff_0%,#f4f6fb_52%,#e7ecf4_100%)]" />
-            <div className="pointer-events-none absolute inset-0 -z-10 opacity-60 bg-[linear-gradient(rgba(148,163,184,0.11)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.11)_1px,transparent_1px)] bg-size-[56px_56px]" />
-            <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-64 bg-[radial-gradient(ellipse_at_center,rgba(212,19,103,0.12),transparent_60%)] blur-3xl" />
-
+        <div className="relative min-h-screen bg-transparent overflow-hidden text-slate-900">
             <main className="mx-auto flex min-h-screen max-w-7xl flex-col px-4 py-4 sm:px-6 lg:px-8 lg:py-6">
                 <section className="rounded-4xl border border-white/70 bg-white p-4 shadow-[0_24px_80px_rgba(15,23,42,0.12)] backdrop-blur-xl sm:p-6">
                     <div className="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-white px-4 py-4 shadow-sm md:flex-row md:items-center md:justify-between">

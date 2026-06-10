@@ -6,7 +6,7 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-40 bg-[#d41367] text-slate-900 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 text-slate-900">
       <div className="mx-auto max-w-7xl px-3 py-3 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-[linear-gradient(180deg,#fffdf9_0%,#f4efe8_100%)] shadow-[0_18px_48px_rgba(15,23,42,0.12)]">
           <div className="flex flex-col gap-4 px-4 py-4 sm:px-5">

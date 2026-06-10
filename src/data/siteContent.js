@@ -4,6 +4,7 @@ export const navItems = [
   { label: 'Newsletters', path: '/newsletters' },
   { label: 'Brand Center', path: '/brand-center' },
   { label: 'Team', path: '/team' },
+  { label: 'Showcase', path: 'https://showcase.rotaract3191.org/'}
 ]
 
 export const socialLinks = [
