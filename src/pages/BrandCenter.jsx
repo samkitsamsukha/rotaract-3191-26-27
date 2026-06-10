@@ -25,9 +25,9 @@ const brandSections = [
 ]
 
 const cockpitMetrics = [
-    { label: 'CLEARANCE', value: 'A1' },
-    { label: 'RUNWAY', value: '03' },
-    { label: 'SIGNAL', value: 'HD' },
+    { label: 'District', value: '3191' },
+    { label: 'Zones', value: '4' },
+    { label: 'Clubs', value: '78' },
 ]
 
 export default function BrandCenter() {
@@ -44,9 +44,9 @@ export default function BrandCenter() {
                         <div className="flex flex-row items-center gap-6 justify-center">
                             <div className="h-3 w-3 rounded-full bg-[#d41367] shadow-[0_0_0_7px_rgba(212,19,103,0.14)]" />
                             <div>
-                                <h1 className="mt-1 text-5xl font-black tracking-tight text-slate-900 sm:text-2xl">
+                                <p className="text-2xl md:text-5xl font-black tracking-tight text-slate-900">
                                     BRAND CENTER
-                                </h1>
+                                </p>
                             </div>
                         </div>
 
@@ -71,7 +71,7 @@ export default function BrandCenter() {
                                     <h2 className="mt-2 text-lg font-bold text-slate-900 sm:text-xl">Brand Center - Logos, Documents and Profiles</h2>
                                 </div>
                                 <div className="rounded-full border border-[#d41367]/20 bg-[#d41367]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#d41367]">
-                                    Up to Date
+                                    UNDER CONTROL
                                 </div>
                             </div>
 
@@ -100,7 +100,7 @@ export default function BrandCenter() {
                                             ))}
                                         </div>
 
-                                        <div className="mt-5 flex justify-center">
+                                        <div className="mt-5 flex justify-center align-bottom">
                                             <a
                                                 href={section.link}
                                                 className="
@@ -129,7 +129,7 @@ export default function BrandCenter() {
                                                     />
                                                 </svg>
 
-                                                <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#d41367]/0 via-[#d41367]/10 to-[#d41367]/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                                <span className="absolute inset-0 rounded-xl bg-linear-to-r from-[#d41367]/0 via-[#d41367]/10 to-[#d41367]/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                                             </a>
                                         </div>
                                     </article>
