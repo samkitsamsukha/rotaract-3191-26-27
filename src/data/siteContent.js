@@ -1,7 +1,7 @@
 export const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  { label: 'Newsletters', path: '/newsletters' },
+  // { label: 'Newsletters', path: '/newsletters' },
   { label: 'Brand Center', path: '/brand-center' },
   { label: 'Team', path: '/team' },
   { label: 'Showcase', path: 'https://showcase.rotaract3191.org/'}
