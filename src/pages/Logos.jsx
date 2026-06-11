@@ -8,7 +8,7 @@ const logoCollections = [
         subtitle: 'District identity pack',
         cover: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand.png',
         zipName: 'Rotaract3191Masterbrand.zip',
-        zipLabel: 'Download ZIP',
+        zipLabel: 'Acquire ZIP',
         variants: [
             {
                 label: 'Primary',
@@ -42,7 +42,7 @@ const logoCollections = [
         subtitle: 'Core club identity',
         cover: '/assets/brand-centre/2026-27/Rotaract Masterbrand.png',
         zipName: 'RotaractMasterbrand.zip',
-        zipLabel: 'Download ZIP',
+        zipLabel: 'Acquire ZIP',
         variants: [
             {
                 label: 'Primary',
@@ -76,7 +76,7 @@ const logoCollections = [
         subtitle: 'Rotary identity pack',
         cover: '/assets/brand-centre/2026-27/Rotary Masterbrand.png',
         zipName: 'RotaryMasterbrand.zip',
-        zipLabel: 'Download ZIP',
+        zipLabel: 'Acquire ZIP',
         variants: [
             {
                 label: 'Primary',
@@ -118,7 +118,7 @@ const logoCollections = [
         subtitle: 'District-level rotary assets',
         cover: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand.png',
         zipName: 'Rotary3191Masterbrand.zip',
-        zipLabel: 'Download ZIP',
+        zipLabel: 'Acquire ZIP',
         variants: [
             {
                 label: 'Primary',
@@ -181,21 +181,21 @@ function LogoCard({ collection, onPreview }) {
                     <button
                         type="button"
                         onClick={() => onPreview(collection)}
-                        className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                        className="cursor-pointer inline-flex items-center justify-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
                     >
                         Preview
                     </button>
                     <a
                         href={collection.variants[0].file}
-                        download
-                        className="inline-flex items-center justify-center rounded-full bg-[#d41367] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(212,19,103,0.22)] transition hover:bg-[#b71258]"
+                        Acquire
+                        className="cursor-pointer inline-flex items-center justify-center rounded-full bg-[#d41367] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(212,19,103,0.22)] transition hover:bg-[#b71258]"
                     >
-                        Download Image
+                        Acquire Image
                     </a>
                     <button
                         type="button"
-                        onClick={() => downloadZip(collection)}
-                        className="inline-flex items-center justify-center rounded-full border border-[#d41367]/20 bg-[#d41367]/10 px-4 py-2 text-sm font-semibold text-[#d41367] transition hover:bg-[#d41367]/15"
+                        onClick={() => AcquireZip(collection)}
+                        className="cursor-pointer inline-flex items-center justify-center rounded-full border border-[#d41367]/20 bg-[#d41367]/10 px-4 py-2 text-sm font-semibold text-[#d41367] transition hover:bg-[#d41367]/15"
                     >
                         {collection.zipLabel}
                     </button>
@@ -205,7 +205,7 @@ function LogoCard({ collection, onPreview }) {
     )
 }
 
-async function downloadZip(collection) {
+async function AcquireZip(collection) {
     const zip = new JSZip()
 
     const files = await Promise.all(
@@ -231,7 +231,7 @@ async function downloadZip(collection) {
     const url = URL.createObjectURL(archive)
     const anchor = document.createElement('a')
     anchor.href = url
-    anchor.download = collection.zipName
+    anchor.Acquire = collection.zipName
     anchor.click()
     URL.revokeObjectURL(url)
 }
@@ -371,7 +371,7 @@ function Logos() {
                                 <button
                                     type="button"
                                     onClick={() => setActiveCollection(null)}
-                                    className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100"
+                                    className="cursor-pointer rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100"
                                 >
                                     Exit Deck
                                 </button>
@@ -410,7 +410,7 @@ function Logos() {
                                         <div className="mt-4 flex flex-wrap gap-3">
                                             <button
                                                 type="button"
-                                                onClick={() => downloadZip(modalCollection)}
+                                                onClick={() => AcquireZip(modalCollection)}
                                                 className="inline-flex items-center justify-center rounded-full bg-[#d41367] px-5 py-2.5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:shadow-[0_0_25px_rgba(212,19,103,0.35)]"
                                             >
                                                 Deploy Package
@@ -418,7 +418,7 @@ function Logos() {
 
                                             <a
                                                 href={modalCollection.variants[0].file}
-                                                download
+                                                Acquire
                                                 className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold uppercase tracking-[0.15em] text-slate-700 transition hover:bg-slate-50"
                                             >
                                                 Acquire Asset
@@ -457,7 +457,7 @@ function Logos() {
 
                                                         <a
                                                             href={variant.file}
-                                                            download
+                                                            Acquire
                                                             className="rounded-full bg-[#d41367] px-4 py-2 text-xs font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:scale-105 hover:bg-[#b71258]"
                                                         >
                                                             Acquire
