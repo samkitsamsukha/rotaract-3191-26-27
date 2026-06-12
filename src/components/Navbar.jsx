@@ -12,7 +12,7 @@ function Navbar() {
           <div className="flex flex-col gap-4 px-4 py-4 sm:px-5">
             <div className="flex items-center justify-between gap-3 lg:flex-nowrap">
               <NavLink to="/" end className="flex items-center gap-3 self-start">
-                <img src="\assets\brand-centre\2026-27\Rotaract 3191 Masterbrand Simplified.png" alt="Rotaract District 3191 Logo" className="h-13.5 w-auto" />
+                <img src="/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand Simplified.png" alt="Rotaract District 3191 Logo" className="h-13.5 w-auto" />
               </NavLink>
 
               <div className="hidden flex-1 items-center justify-center px-4 lg:flex">

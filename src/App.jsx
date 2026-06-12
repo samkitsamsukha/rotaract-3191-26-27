@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Preloader from './components/Preloader.jsx'
 import SiteLayout from './components/SiteLayout.jsx'
 import About from './pages/About.jsx'
 import BrandCenter from './pages/BrandCenter.jsx'
@@ -10,18 +12,27 @@ import Logos from './pages/Logos.jsx'
 import './App.css'
 
 function App() {
+  const [preloaderDone, setPreloaderDone] = useState(false)
+
   return (
-    <Routes>
-      <Route element={<SiteLayout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="newsletters" element={<Newsletters />} />
-        <Route path="brand-center" element={<BrandCenter />} />
-        <Route path="brand-center/logos" element={<Logos />} />
-        <Route path="team" element={<Team />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+    <>
+      {!preloaderDone && (
+        <Preloader onComplete={() => setPreloaderDone(true)} />
+      )}
+      <div style={{ opacity: preloaderDone ? 1 : 0, transition: 'opacity 0.6s ease' }}>
+        <Routes>
+          <Route element={<SiteLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="newsletters" element={<Newsletters />} />
+            <Route path="brand-center" element={<BrandCenter />} />
+            <Route path="brand-center/logos" element={<Logos />} />
+            <Route path="team" element={<Team />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </div>
+    </>
   )
 }
 
