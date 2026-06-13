@@ -250,12 +250,9 @@ const QUICK_LINKS = [
 ]
 
 const EVENTS = [
-  { name: 'District Learning Assembly', abbr: 'DLA', icon: '\uD83D\uDCDA', desc: 'The flagship learning event bringing Rotaractors together for workshops and knowledge-sharing.', color: '#38bdf8' },
-  { name: 'Nadda Habba', abbr: 'NH', icon: '\uD83C\uDF89', desc: 'A cultural celebration uniting clubs in a spirit of fellowship, music and tradition.', color: '#fb923c' },
-  { name: 'Tarang', abbr: 'TRG', icon: '\uD83C\uDFB6', desc: 'The district\u2019s vibrant inter-club cultural fest celebrating talent, creativity and youth energy.', color: '#f472b6' },
-  { name: 'District Sports Meet', abbr: 'DSM', icon: '\uD83C\uDFC6', desc: 'An action-packed sporting event fostering team spirit, healthy competition and club camaraderie.', color: '#4ade80' },
-  { name: 'Vaayu \u2013 4th Annual District Conference', abbr: 'VAAYU', icon: '\u2708', desc: 'The premier district conference bringing leaders, sponsors and members together \u2014 an unmissable milestone.', color: '#fb923c' },
-  { name: 'Rota Camp', abbr: 'RC', icon: '\u26FA', desc: 'An immersive camp experience that builds leadership, fellowship and bonds that last a lifetime.', color: '#38bdf8' },
+  { name: 'District Learning Assembly', slug: 'district-learning-assembly', abbr: 'DLA', icon: '\uD83D\uDCDA', desc: 'The flagship learning event bringing Rotaractors together for workshops and knowledge-sharing.', color: '#38bdf8' },
+  { name: 'Nadda Habba', slug: 'nadda-habba', abbr: 'NH', icon: '\uD83C\uDF89', desc: 'A cultural celebration uniting clubs in a spirit of fellowship, music and tradition.', color: '#fb923c' },
+  { name: 'Vaayu \u2013 4th Annual District Conference', slug: 'vaayu-district-conference', abbr: 'VAAYU', icon: '\u2708', desc: 'The premier district conference bringing leaders, sponsors and members together \u2014 an unmissable milestone.', color: '#fb923c' },
 ]
 
 const TEAM = [
@@ -299,12 +296,12 @@ function HeroSlider() {
   }, [])
 
   return (
-    <section style={{ position: 'relative', minHeight: 'clamp(420px,88vh,720px)', overflow: 'hidden', borderRadius: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+    <section style={{ position: 'relative', minHeight: 'clamp(300px,65vh,550px)', overflow: 'hidden', borderRadius: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
       {/* Photo background */}
       <div key={current} style={{
         position: 'absolute', inset: 0, zIndex: 0,
         backgroundImage: 'url(/assets/hero-bg.jpg)',
-        backgroundSize: 'cover', backgroundPosition: 'center top',
+        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
         animation: 'sliderFadeIn .9s ease forwards',
       }} />
 
@@ -422,13 +419,19 @@ export default function Home() {
           <h2 style={SEC_TITLE}>District Events</h2>
           <p style={{ fontSize: '.88rem', color: '#334155', marginTop: 10 }}>Flagship events that bring the district together</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(250px,1fr))', gap: 18 }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 18 }}>
           {EVENTS.map((ev, i) => (
-            <div key={i} id={`event-${i}`} className="ev-card glass-card" style={{ borderRadius: 18, padding: '24px 20px', cursor: 'default', borderTop: `3px solid ${ev.color}` }}>
+            <Link to={`/events/${ev.slug}`} key={i} id={`event-${i}`} className="ev-card glass-card hover-lift" style={{ flex: '1 1 250px', maxWidth: '320px', borderRadius: 18, padding: '24px 20px', textDecoration: 'none', display: 'block', borderTop: `3px solid ${ev.color}` }}>
               <h3 style={{ fontFamily: "'Rajdhani','Inter',sans-serif", fontSize: '1.04rem', fontWeight: 700, color: '#0f172a', margin: '0 0 8px', lineHeight: 1.25 }}>{ev.name}</h3>
               <p style={{ fontSize: '.82rem', color: '#334155', margin: 0, lineHeight: 1.7 }}>{ev.desc}</p>
-            </div>
+            </Link>
           ))}
+        </div>
+        <div style={{ textAlign: 'center', marginTop: 30, position: 'relative' }}>
+          <Link to="/events" className="btn-s"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,.14)', color: '#0f172a', fontFamily: "'Rajdhani','Inter',sans-serif", fontWeight: 700, fontSize: '.88rem', letterSpacing: '.12em', textTransform: 'uppercase', padding: '12px 28px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,.35)' }}>
+            VIEW ALL EVENTS →
+          </Link>
         </div>
       </section>
 

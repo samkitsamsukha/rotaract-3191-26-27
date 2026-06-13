@@ -9,6 +9,10 @@ import Newsletters from './pages/Newsletters.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Team from './pages/Team.jsx'
 import Logos from './pages/Logos.jsx'
+import Calendar from './pages/Calendar.jsx'
+import Events from './pages/Events.jsx'
+import EventDetails from './pages/EventDetails.jsx'
+import Zones from './pages/Zones.jsx'
 import './App.css'
 
 function App() {
@@ -28,6 +32,10 @@ function App() {
             <Route path="brand-center" element={<BrandCenter />} />
             <Route path="brand-center/logos" element={<Logos />} />
             <Route path="team" element={<Team />} />
+            <Route path="calendar" element={<Calendar />} />
+            <Route path="events" element={<Events />} />
+            <Route path="events/:slug" element={<EventDetails />} />
+            <Route path="zones" element={<Zones />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
