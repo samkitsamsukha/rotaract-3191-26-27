@@ -1,11 +1,3 @@
-import {
-  Instagram,
-  Linkedin,
-  Facebook,
-  Youtube,
-  Twitter,
-} from "lucide-react";
-
 function Footer() {
 
   return (
