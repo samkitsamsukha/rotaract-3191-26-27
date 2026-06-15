@@ -49,19 +49,19 @@ const documentSections = [
     code: "CG-01",
     documents: [
       {
-        title: "Installation Guidelines",
+        title: "Installation Guidelines - Coming Soon",
         file: "/docs/installation-guidelines.pdf",
       },
       {
-        title: "Reporting Guidelines",
+        title: "Reporting Guidelines - Coming Soon",
         file: "/docs/reporting-guidelines.pdf",
       },
       {
-        title: "Brand Guidelines",
+        title: "Brand Guidelines - Coming Soon",
         file: "/docs/brand-guidelines.pdf",
       },
       {
-        title: "Q1 Recognition Guide",
+        title: "Q1 Recognition Guide - Coming Soon",
         file: "/docs/q1-recognition.pdf",
       },
     ],
@@ -113,7 +113,7 @@ export default function Documents() {
               <div className="inline-flex items-center gap-2 rounded-full border border-[#d41367]/20 bg-[#d41367]/10 px-4 py-2">
                 <ShieldCheck size={14} />
                 <span className="text-xs font-bold tracking-[0.25em] text-[#d41367]">
-                  DOCUMENT CONTROL
+                  DOCUMENT VAULT
                 </span>
               </div>
 
@@ -127,10 +127,10 @@ export default function Documents() {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-3">
+            <div className="hidden md:grid grid-cols-3 gap-3">
               {[
-                ["FILES", "48"],
-                ["MODULES", "12"],
+                ["FILES", "5"],
+                ["MODULES", "2"],
                 ["STATUS", "READY"],
               ].map(([label, value]) => (
                 <div
