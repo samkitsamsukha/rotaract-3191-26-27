@@ -118,12 +118,16 @@ const council = [
         name: "Rtr. Dhruv Sundhesha",
         position: "District Treasurer",
         photo: "",
+        executive: true,
+        district: false,
       },
       {
         id: 2,
         name: "Rtr. M V Karthik",
         position: "District Treasurer",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -136,18 +140,24 @@ const council = [
         name: "Rtr. Dhanesh Menon",
         position: "District Sergeant-at-Arms",
         photo: "",
+        executive: true,
+        district: false,
       },
       {
         id: 2,
         name: "Rtr. Smriti Subramaniam",
         position: "District Sergeant-at-Arms",
         photo: "",
+        executive: true,
+        district: false,
       },
       {
         id: 3,
         name: "Rtr. Lokapriya R",
         position: "District Sergeant-at-Arms",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -160,12 +170,16 @@ const council = [
         name: "PP Rtr. Nithin M",
         position: "District Club Service Director",
         photo: "",
+        executive: true,
+        district: false,
       },
       {
         id: 2,
         name: "Rtr. Ayman Fathima",
         position: "District Club Service Director",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -178,6 +192,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -190,6 +206,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -202,6 +220,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -214,6 +234,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -226,6 +248,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -238,6 +262,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -250,12 +276,16 @@ const council = [
         name: "Rtr. Manoj B",
         position: "District Web and Tech Director",
         photo: "",
+        executive: true,
+        district: false,
       },
       {
         id: 2,
         name: "Rtr. Samkit Samsukha",
         position: "District Web and Tech Director",
-        photo: ""
+        photo: "",
+        executive: true,
+        district: false,
       }
     ]
   },
@@ -268,6 +298,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -280,6 +312,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -292,6 +326,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -304,6 +340,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -316,6 +354,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -328,6 +368,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -340,6 +382,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -352,6 +396,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -364,6 +410,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   },
@@ -376,6 +424,8 @@ const council = [
         name: "",
         position: "",
         photo: "",
+        executive: true,
+        district: false,
       },
     ]
   }
@@ -455,47 +505,6 @@ function LeadershipCard({ member }) {
   );
 }
 
-function TeamMemberCard({ member }) {
-  return (
-    <div
-      className="
-      rounded-3xl
-      border
-      border-pink-100
-      bg-white/90
-      p-5
-      text-center
-      shadow-sm
-      transition-all
-      duration-300
-      hover:-translate-y-1
-      hover:border-[#d41367]
-      hover:shadow-lg
-    "
-    >
-      <img
-        src={member.photo}
-        alt={member.name}
-        className="
-        mx-auto
-        h-40
-        w-40
-        rounded-full
-        object-cover
-      "
-      />
-
-      <h4 className="mt-4 font-bold text-slate-900">
-        {member.name}
-      </h4>
-
-      <p className="mt-1 text-sm text-slate-500">
-        {member.position}
-      </p>
-    </div>
-  );
-}
-
 export default function Team() {
   return (
     <div className="relative min-h-screen text-slate-900">
@@ -565,12 +574,12 @@ export default function Team() {
 
         <div className="grid gap-10 lg:grid-cols-4">
           {zrrs.map((member) => (
-            <LeadershipCard
-              key={`zone-${member.id}`}
-              member={member}
-            />
+            <div>
+              zrr
+            </div>
           ))}
         </div>
+
       </main>
     </div>
   );
