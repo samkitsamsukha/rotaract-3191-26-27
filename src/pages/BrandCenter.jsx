@@ -134,65 +134,7 @@ export default function BrandCenter() {
                             </div>
                         </div>
 
-                        {/* <div className="grid gap-4">
-                            <div className="rounded-4xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-slate-500">HUD</p>
-                                        <h2 className="mt-2 text-lg font-bold text-slate-900">Control panel</h2>
-                                    </div>
-                                    <div className="h-12 w-12 rounded-full border border-[#d41367]/20 bg-[conic-gradient(from_90deg,#d41367_0deg,#f7b4cb_120deg,#ffffff_240deg,#d41367_360deg)] p-2">
-                                        <div className="h-full w-full rounded-full bg-white" />
-                                    </div>
-                                </div>
-
-                                <div className="mt-4 grid gap-3 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-                                    {[
-                                        ['Airspeed', 'Nominal'],
-                                        ['Altitude', 'Stable'],
-                                        ['System', 'Ready'],
-                                    ].map(([label, value]) => (
-                                        <div key={label} className="rounded-3xl border border-slate-200 bg-slate-50 p-3">
-                                            <div className="text-[9px] font-semibold uppercase tracking-[0.24em] text-slate-500">{label}</div>
-                                            <div className="mt-2 text-sm font-black text-slate-900">{value}</div>
-                                            <div className="mt-3 h-2 rounded-full bg-slate-200">
-                                                <div
-                                                    className="h-2 rounded-full bg-linear-to-r from-[#d41367] via-[#f08fb0] to-slate-900"
-                                                    style={{ width: label === 'Airspeed' ? '72%' : label === 'Altitude' ? '84%' : '92%' }}
-                                                />
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="rounded-4xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
-                                <div className="flex items-center justify-between gap-3">
-                                    <div>
-                                        <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-slate-500">Vector map</p>
-                                        <h2 className="mt-2 text-lg font-bold text-slate-900">Navigation grid</h2>
-                                    </div>
-                                    <div className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
-                                        Marked
-                                    </div>
-                                </div>
-
-                                <div className="mt-4 rounded-[1.75rem] border border-slate-200 bg-[radial-gradient(circle_at_center,rgba(212,19,103,0.12),transparent_32%),radial-gradient(circle_at_center,rgba(15,23,42,0.06),transparent_58%),linear-gradient(180deg,#ffffff_0%,#f3f6fb_100%)] p-4">
-                                    <div className="grid aspect-[1.5] place-items-center rounded-[1.25rem] border border-slate-200 bg-white/70">
-                                        <div className="relative h-36 w-36 rounded-full border border-slate-200 bg-white">
-                                            <div className="absolute left-1/2 top-1/2 h-[140%] w-px -translate-x-1/2 -translate-y-1/2 bg-slate-200" />
-                                            <div className="absolute left-1/2 top-1/2 h-px w-[140%] -translate-x-1/2 -translate-y-1/2 bg-slate-200" />
-                                            <div className="absolute inset-4 rounded-full border border-[#d41367]/20" />
-                                            <div className="absolute inset-8 rounded-full border border-slate-200" />
-                                            <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#d41367] shadow-[0_0_0_8px_rgba(212,19,103,0.15)]" />
-                                            <div className="absolute left-[18%] top-[24%] h-2 w-2 rounded-full bg-slate-900" />
-                                            <div className="absolute right-[20%] top-[20%] h-2 w-2 rounded-full bg-[#d41367]" />
-                                            <div className="absolute left-[28%] bottom-[18%] h-2 w-2 rounded-full bg-slate-400" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                        
                     </div>
                 </section>
             </main>

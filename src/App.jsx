@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Preloader from './components/Preloader.jsx'
 import SiteLayout from './components/SiteLayout.jsx'
-import About from './pages/About.jsx'
 import BrandCenter from './pages/BrandCenter.jsx'
 import Home from './pages/Home.jsx'
 import Newsletters from './pages/Newsletters.jsx'
@@ -14,6 +13,8 @@ import Events from './pages/Events.jsx'
 import EventDetails from './pages/EventDetails.jsx'
 import Zones from './pages/Zones.jsx'
 import './App.css'
+import AboutRotaract from './pages/AboutRotaract.jsx'
+import AboutRotaract3191 from './pages/AboutRotaract3191.jsx'
 
 function App() {
   const [preloaderDone, setPreloaderDone] = useState(false)
@@ -27,7 +28,8 @@ function App() {
         <Routes>
           <Route element={<SiteLayout />}>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
+            <Route path="about" element={<AboutRotaract />} />
+            <Route path="about-3191" element={<AboutRotaract3191 />} />
             <Route path="newsletters" element={<Newsletters />} />
             <Route path="brand-center" element={<BrandCenter />} />
             <Route path="brand-center/logos" element={<Logos />} />

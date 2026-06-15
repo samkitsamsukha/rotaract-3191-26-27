@@ -49,62 +49,82 @@ const zrrs = [
   {
     id: 1,
     position: "Zonal Rotaract Representative",
-    name: "IPP. Rtr. Hitha Suresh",
-    photo: "/assets/team/2026-27/zrrs/Hitha Suresh.jpeg",
+    zone: "Zone Mirage",
+    name: "Rtr. Hitha Suresh",
+    photo: "/assets/team/2026-27/council/Hitha.jpg",
+    rtr_id: "11814610",
   },
   {
     id: 2,
-    position: "Zonal Rotaract Representative + Rotary Foundation Chair",
-    name: "IPP. Rtn. Rtr. Samarth Viswanath",
-    photo: "/assets/team/2026-27/zrrs/Samarth Viswanath.jpeg",
+    position: "Zonal Rotaract Representative",
+    zone: "Zone Mirage",
+    name: "Rtn. Rtr. Samarth Viswanath",
+    photo: "/assets/team/2026-27/council/Samarth.png",
+    rtr_id: "11330839",
   },
   {
     id: 3,
     position: "Zonal Rotaract Representative",
-    name: "PP. Rtr. Hemant Chhajer",
-    photo: "/assets/team/2026-27/zrrs/Hemant Chhajer.jpeg",
+    zone: "Zone Rafale",
+    name: "Rtr. Hemant Chhajer",
+    photo: "/assets/team/2026-27/council/Hemant.jpg",
+    rtr_id: "10334499",
   },
   {
     id: 4,
     position: "Zonal Rotaract Representative",
-    name: "IPP. Rtr. Rohith K R",
-    photo: "/assets/team/2026-27/zrrs/Rohith K R.jpeg",
+    zone: "Zone Mirage",
+    name: "Rtr. Rohith K R",
+    photo: "/assets/team/2026-27/council/Rohith.jpeg",
+    rtr_id: "12131373",
   },
   {
     id: 5,
     position: "Zonal Rotaract Representative",
-    name: "PP. Rtn. Rtr. Gagan M",
-    photo: "/assets/team/2026-27/zrrs/Gagan M.jpeg",
+    zone: "Zone Sukhoi",
+    name: "Rtn. Rtr. Gagan M",
+    photo: "/assets/team/2026-27/council/Gagan.webp",
+    rtr_id: "12040026",
   },
   {
     id: 6,
     position: "Zonal Rotaract Representative",
-    name: "PP. Rtr. Madan Mohan B",
-    photo: "/assets/team/2026-27/zrrs/Madan Mohan B.jpeg",
+    zone: "Zone Sukhoi",
+    name: "Rtr. Madan Mohan B",
+    photo: "/assets/team/2026-27/council/Madan.jpg",
+    rtr_id: "11457950",
   },
   {
     id: 7,
     position: "Zonal Rotaract Representative",
-    name: "IPP. Rtr. Akhilesh R",
-    photo: "/assets/team/2026-27/zrrs/Akhilesh R.jpeg",
+    zone: "Zone Tejas",
+    name: "Rtr. Akhilesh R",
+    photo: "/assets/team/2026-27/council/Akhilesh.png",
+    rtr_id: "11930827",
   },
   {
     id: 8,
     position: "Zonal Rotaract Representative",
-    name: "PP. PHF Rtn. Rtr. Akshay Kumar BS",
-    photo: "/assets/team/2026-27/zrrs/Akshay Kumar BS.jpeg",
+    zone: "Zone Tejas",
+    name: "Rtn. Rtr. Akshay Kumar BS",
+    photo: "/assets/team/2026-27/council/Akshay Kumar BS.jpeg",
+    rtr_id: "10855989",
   },
   {
     id: 9,
     position: "Kolar Regional Representative",
-    name: "PP. Rtr. Rahul R",
-    photo: "/assets/team/2026-27/zrrs/Rahul R.jpeg",
+    zone: "Kolar Region",
+    name: "Rtr. Rahul R",
+    photo: "/assets/team/2026-27/council/Rahul R.jpg",
+    rtr_id: "11334174",
   },
   {
     id: 10,
     position: "Ramnagar Regional Representative",
-    name: "PP. Rtr. Shashank MN",
-    photo: "/assets/team/2026-27/zrrs/Shashank MN.jpeg",
+    zone: "Ramnagar Region",
+    name: "Rtr. Shashank MN",
+    photo: "/assets/team/2026-27/council/Shashank MN.jpg",
+    rtr_id: "11629933",
   }
 ];
 
@@ -117,7 +137,8 @@ const council = [
         id: 1,
         name: "Rtr. Dhruv Sundhesha",
         position: "District Treasurer",
-        photo: "",
+        photo: "/assets/team/2026-27/council/Dhruv.jpg",
+        rtr_id: "10701363",
         executive: true,
         district: false,
       },
@@ -125,21 +146,23 @@ const council = [
         id: 2,
         name: "Rtr. M V Karthik",
         position: "District Treasurer",
-        photo: "",
+        photo: "/assets/team/2026-27/council/MVKarthik.jpg",
+        rtr_id: "12131356",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 2,
-    avenue: "District Treasurer",
+    avenue: "District Sergeant-at-Arms",
     members: [
       {
         id: 1,
         name: "Rtr. Dhanesh Menon",
         position: "District Sergeant-at-Arms",
-        photo: "",
+        photo: "/assets/team/2026-27/council/Dhanesh.jpeg",
+        rtr_id: "12099126",
         executive: true,
         district: false,
       },
@@ -147,7 +170,8 @@ const council = [
         id: 2,
         name: "Rtr. Smriti Subramaniam",
         position: "District Sergeant-at-Arms",
-        photo: "",
+        photo: "/assets/team/2026-27/council/Smriti.jpeg",
+        rtr_id: "12075534",
         executive: true,
         district: false,
       },
@@ -155,11 +179,12 @@ const council = [
         id: 3,
         name: "Rtr. Lokapriya R",
         position: "District Sergeant-at-Arms",
-        photo: "",
+        photo: "/assets/team/2026-27/council/Lokapriya.jpg",
+        rtr_id: "123717381",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 3,
@@ -167,9 +192,10 @@ const council = [
     members: [
       {
         id: 1,
-        name: "PP Rtr. Nithin M",
+        name: "PP. Rtr. Nithin M",
         position: "District Club Service Director",
-        photo: "",
+        photo: "/assets/team/2026-27/council/Nithin.jpeg",
+        rtr_id: "12077096",
         executive: true,
         district: false,
       },
@@ -177,11 +203,12 @@ const council = [
         id: 2,
         name: "Rtr. Ayman Fathima",
         position: "District Club Service Director",
-        photo: "",
+        photo: "/assets/team/2026-27/council/Ayman.jpg",
+        rtr_id: "12372980",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 4,
@@ -189,13 +216,32 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "IPP. Rtr. BS Adithya",
+        position: "District Community Service Director",
+        photo: "/assets/team/2026-27/council/Adithya.jpeg",
+        rtr_id: "11575083",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "IPP. Rtr. Afnan Kazim",
+        position: "District Community Service Director",
+        photo: "/assets/team/2026-27/council/Affan.jpeg",
+        rtr_id: "11500888",
+        executive: true,
+        district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Ishita Poddar",
+        position: "District Community Service Director",
+        photo: "/assets/team/2026-27/council/Ishita.jpeg",
+        rtr_id: "12135941",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 5,
@@ -203,13 +249,32 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtr. Laasya A Bhagawan",
+        position: "District International Service Director",
+        photo: "/assets/team/2026-27/council/Laasya.jpg",
+        rtr_id: "11820886",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "Rtr. Amritesh Sahu",
+        position: "District International Service Director",
+        photo: "/assets/team/2026-27/council/Amritesh.jpeg",
+        rtr_id: "12392004",
+        executive: true,
+        district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Varun S.",
+        position: "District International Service Director",
+        photo: "/assets/team/2026-27/council/Varun.jpeg",
+        rtr_id: "11559173",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 6,
@@ -217,13 +282,32 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "PP. Rtr. Tagore Maddali",
+        position: "District Professional Development Director",
+        photo: "/assets/team/2026-27/council/Tagore.jpeg",
+        rtr_id: "10040898",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "IPP. Rtr. Sameen Mehnaz Fathima",
+        position: "District Professional Development Director",
+        photo: "/assets/team/2026-27/council/Sameen.jpeg",
+        rtr_id: "11818350",
+        executive: true,
+        district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Prithvi Raj R",
+        position: "District Professional Development Director",
+        photo: "/assets/team/2026-27/council/Prithvi.jpg",
+        rtr_id: "11827710",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 7,
@@ -231,13 +315,32 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtr. Govardhan K",
+        position: "District Design & Visual Communications Director",
+        photo: "/assets/team/2026-27/council/Govardhan.jpg",
+        rtr_id: "12386548",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "Rtr. Nandan Kumar V S",
+        position: "District Design & Visual Communications Director",
+        photo: "/assets/team/2026-27/council/Nandan.heic",
+        rtr_id: "11914938",
+        executive: true,
+        district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Deeksha A J",
+        position: "District Design & Visual Communications Director",
+        photo: "/assets/team/2026-27/council/Deeksha.jpg",
+        rtr_id: "12391998",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 8,
@@ -245,13 +348,23 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtr. Harshitha B C",
+        position: "District Editor",
+        photo: "/assets/team/2026-27/council/Harshitha.jpg",
+        rtr_id: "11865303",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "Rtr. Darshana Sankhla",
+        position: "District Editor",
+        photo: "/assets/team/2026-27/council/Darshana.jpeg",
+        rtr_id: "11604799",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 9,
@@ -259,63 +372,128 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtr. Mohammed Saqib Pasha",
+        position: "District Social Media Director",
+        photo: "/assets/team/2026-27/council/Saqib.jpeg",
+        rtr_id: "12199885",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "Rtr. Noor Fathima",
+        position: "District Social Media Director",
+        photo: "/assets/team/2026-27/council/Noor.jpg",
+        rtr_id: "11930163",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 10,
+    avenue: "Public Image",
+    members: [
+      {
+        id: 1,
+        name: "Rtr. Manoj R",
+        position: "District Public Image Director",
+        photo: "/assets/team/2026-27/council/ManojR.jpg",
+        rtr_id: "12229688",
+        executive: true,
+        district: false,
+      },
+    ],
+  },
+  {
+    id: 11,
     avenue: "Web and Tech",
     members: [
       {
         id: 1,
         name: "Rtr. Manoj B",
-        position: "District Web and Tech Director",
-        photo: "",
+        position: "District Web & Tech Director",
+        photo: "/assets/team/2026-27/council/Manoj B.jpeg",
+        rtr_id: "12313463",
         executive: true,
         district: false,
       },
       {
         id: 2,
         name: "Rtr. Samkit Samsukha",
-        position: "District Web and Tech Director",
-        photo: "",
+        position: "District Web & Tech Director",
+        photo: "/assets/team/2026-27/council/Samkit.jpeg",
+        rtr_id: "12391991",
         executive: true,
         district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Moushmi",
+        position: "District Web & Tech Team",
+        photo: "/assets/team/2026-27/council/Moushmi.png",
+        rtr_id: "XXXXXX",
+        executive: false,
+        district: true,
       }
-    ]
+    ],
   },
   {
-    id: 11,
+    id: 12,
     avenue: "Next Gen",
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtn. Rtr. Arunima Biswas",
+        position: "District Next Gen Director",
+        photo: "/assets/team/2026-27/council/Arunima.png",
+        rtr_id: "10448331",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "IPP. Rtr. Pranav Y.",
+        position: "District Next Gen Director",
+        photo: "/assets/team/2026-27/council/Pranav Y.jpg",
+        rtr_id: "11936762",
+        executive: true,
+        district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Kavya Shree S.",
+        position: "District Next Gen Director",
+        photo: "/assets/team/2026-27/council/Kavya Shree.jpg",
+        rtr_id: "12227038",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
-    id: 12,
+    id: 13,
     avenue: "Events",
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtr. Harshita Verma",
+        position: "District Director of Events",
+        photo: "/assets/team/2026-27/council/Harshita Verma.jpg",
+        rtr_id: "12390056",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "PP. Rtr. Likith R.",
+        position: "District Director of Events",
+        photo: "/assets/team/2026-27/council/Likith R.jpg",
+        rtr_id: "12058056",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 14,
@@ -323,27 +501,38 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "PP. Rtn. Rtr. Nagendra Babu",
+        position: "District CSR + Outreach & Partnership",
+        photo: "/assets/team/2026-27/council/Nagendra Babu.jpg",
+        rtr_id: "10921917",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "Rtr. Shivani Ram K.",
+        position: "District CSR + Outreach & Partnership",
+        photo: "/assets/team/2026-27/council/Shivani.jpg",
+        rtr_id: "11919314",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 15,
-    avenue: "District Environment Chair",
+    avenue: "Environment",
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "PP. Rtr. Ashwini N.",
+        position: "District Environment Chair",
+        photo: "/assets/team/2026-27/council/Ashwini N.jpg",
+        rtr_id: "11442791",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 16,
@@ -351,13 +540,23 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "PP. Rtr. Vaishnavi Singh Rajput",
+        position: "District Membership Retention and Club Development Chair",
+        photo: "/assets/team/2026-27/council/Vaishnavi Singh.jpeg",
+        rtr_id: "11268118",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "IPP. Rtr. Druva N",
+        position: "District Membership Retention and Club Development Chair",
+        photo: "/assets/team/2026-27/council/Druva.jpg",
+        rtr_id: "10214019",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 17,
@@ -365,13 +564,32 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "IPP. Rtr. Gouthami Parthasarathy",
+        position: "District Learning Facilitator",
+        photo: "/assets/team/2026-27/council/Gouthami.jpeg",
+        rtr_id: "10136528",
         executive: true,
         district: false,
       },
-    ]
+      {
+        id: 2,
+        name: "PP. Rtr. Aayush Mishra",
+        position: "District Learning Facilitator",
+        photo: "/assets/team/2026-27/council/Aayush.jpg",
+        rtr_id: "11939731",
+        executive: true,
+        district: false,
+      },
+      {
+        id: 3,
+        name: "Rtr. Nidhi J.",
+        position: "District Learning Facilitator",
+        photo: "/assets/team/2026-27/council/Nidhi J.jpeg",
+        rtr_id: "11933550",
+        executive: true,
+        district: false,
+      },
+    ],
   },
   {
     id: 18,
@@ -379,13 +597,14 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "IPP. Rtn. Rtr. Gowtham J Kumar",
+        position: "District Resource & Operations Head",
+        photo: "/assets/team/2026-27/council/Gowtham.png",
+        rtr_id: "12183302",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 19,
@@ -393,13 +612,14 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "Rtr. Vikram Murthy",
+        position: "RLYA Chair",
+        photo: "/assets/team/2026-27/council/Vikram.png",
+        rtr_id: "",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 20,
@@ -407,13 +627,14 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "PP. Rtr. Nagendra E.",
+        position: "World Rotaract Week Chair",
+        photo: "/assets/team/2026-27/council/Nagendra.png",
+        rtr_id: "",
         executive: true,
         district: false,
       },
-    ]
+    ],
   },
   {
     id: 21,
@@ -421,15 +642,31 @@ const council = [
     members: [
       {
         id: 1,
-        name: "",
-        position: "",
-        photo: "",
+        name: "PP. Rtr. Madhusudhan A. Kallur",
+        position: "Global Grant Chair",
+        photo: "/assets/team/2026-27/council/Madhusudhan.png",
+        rtr_id: "",
         executive: true,
         district: false,
       },
-    ]
-  }
-]
+    ],
+  },
+  {
+    id: 22,
+    avenue: "Rotary Foundation Chair",
+    members: [
+      {
+        id: 1,
+        name: "Rtn. Rtr. Samarth Viswanath",
+        position: "Rotary Foundation Chair",
+        photo: "/assets/team/2026-27/council/Samarth.png",
+        rtr_id: "11330839",
+        executive: true,
+        district: false,
+      },
+    ],
+  },
+];
 
 function StatCard({ label, value }) {
   return (
@@ -505,6 +742,135 @@ function LeadershipCard({ member }) {
   );
 }
 
+function ZRRCard({ member }) {
+  return (
+    <div className="group overflow-hidden rounded-[28px] border border-pink-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-[#d41367] hover:shadow-2xl">
+
+      <div className="relative aspect-square overflow-hidden">
+        <img
+          src={member.photo}
+          alt={member.name}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {member.rtr_id && (
+          <div className="absolute bottom-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-[#d41367] shadow-md backdrop-blur">
+            {member.rtr_id}
+          </div>
+        )}
+      </div>
+
+      <div className="bg-pink-50 px-6 py-5 text-center">
+        <h3 className="font-bold text-slate-900">
+          {member.name}
+        </h3>
+
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          {member.position}
+        </p>
+        <div className="mt-3 flex justify-center">
+          <span className="rounded-full border border-[#d41367] bg-white px-4 py-1 text-sm tracking-widest text-[#d41367]">
+            {member.zone}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CouncilCard({ member }) {
+  return (
+    <div className="group overflow-hidden rounded-[28px] border border-pink-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-[#d41367] hover:shadow-2xl">
+
+      <div className="relative aspect-square overflow-hidden">
+        <img
+          src={member.photo}
+          alt={member.name}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {member.rtr_id && (
+          <div className="absolute bottom-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-[#d41367] shadow-md backdrop-blur">
+            {member.rtr_id}
+          </div>
+        )}
+      </div>
+
+      <div className="bg-pink-50 px-6 py-5 text-center">
+        <h3 className="font-bold text-slate-900">
+          {member.name}
+        </h3>
+
+        <p className="mt-2 text-sm leading-relaxed text-slate-600">
+          {member.position}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function DistrictCard({ member }) {
+  return (
+    <div className="group overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="relative aspect-square overflow-hidden">
+        <img
+          src={member.photo}
+          alt={member.name}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+
+        {member.rtr_id && (
+          <div className="absolute bottom-2 right-2 rounded-full bg-white/95 px-2 py-1 text-[10px] font-semibold text-[#d41367] shadow">
+            #{member.rtr_id}
+          </div>
+        )}
+      </div>
+
+      <div className="bg-pink-50 p-3 text-center">
+        <h3 className="text-sm font-bold text-slate-900">
+          {member.name}
+        </h3>
+
+        <p className="mt-1 text-xs text-slate-600">
+          {member.position}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function AvenueSection({ avenue }) {
+  const executiveMembers = avenue.members.filter((m) => m.executive);
+  const districtMembers = avenue.members.filter((m) => m.district);
+
+  return (
+    <section className="mb-20">
+      <SectionHeader title={avenue.avenue} />
+
+      <div className="flex flex-wrap justify-center gap-8">
+        {executiveMembers.map((member) => (
+          <div key={member.id} className="w-full max-w-sm md:w-[320px]">
+            <CouncilCard member={member} />
+          </div>
+        ))}
+      </div>
+
+      {/* District Team */}
+      {districtMembers.length > 0 && (
+        <>
+          <div className="flex flex-wrap justify-center gap-6 mt-12">
+            {districtMembers.map((member) => (
+              <div key={member.id} className="w-[280px]">
+                <DistrictCard member={member} />
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+    </section>
+  );
+}
+
 export default function Team() {
   return (
     <div className="relative min-h-screen text-slate-900">
@@ -572,11 +938,20 @@ export default function Team() {
 
         <SectionHeader title="Zonal Rotaract Representatives" />
 
-        <div className="grid gap-10 lg:grid-cols-4">
+        <div className="grid gap-10 lg:grid-cols-4 items-center justify-center">
           {zrrs.map((member) => (
-            <div>
-              zrr
-            </div>
+            <ZRRCard
+              key={member.id}
+              member={member}
+            />
+          ))}
+        </div>
+        <div className="space-y-12">
+          {council.map((avenue) => (
+            <AvenueSection
+              key={avenue.id}
+              avenue={avenue}
+            />
           ))}
         </div>
 
