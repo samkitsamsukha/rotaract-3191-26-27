@@ -3,6 +3,54 @@ import JSZip from 'jszip'
 
 const logoCollections = [
     {
+        id: 'rotaract-3191-cla',
+        title: 'Rotaract 3191 Masterbrand with Presidential Message 2026-27',
+        subtitle: 'District identity pack',
+        cover: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - Cranberry.png',
+        zipName: 'Rotaract3191MasterbrandPM.zip',
+        zipLabel: 'Acquire ZIP',
+        variants: [
+            {
+                label: 'Primary',
+                file: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - Cranberry.png',
+            },
+            {
+                label: 'White',
+                file: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - White.png',
+            },
+            {
+                label: 'Black',
+                file: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - Black.png',
+            },
+        ],
+    },
+    {
+        id: 'pm-2026-27',
+        title: 'Presidential Message 2026-27: Create Lasting Impact',
+        subtitle: 'President Commands',
+        cover: '/assets/brand-centre/2026-27/Create Lasting Impact - Plain.png',
+        zipName: 'CreateLastingImpact.zip',
+        zipLabel: 'Acquire ZIP',
+        variants: [
+            {
+                label: 'Primary',
+                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Plain.png',
+            },
+            {
+                label: 'Cranberry Box',
+                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Box Red.png',
+            },
+            {
+                label: 'Azure Box',
+                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Box.png',
+            },
+            {
+                label: 'Horizontal Cranberry',
+                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Horizontal.png',
+            },
+        ],
+    },
+    {
         id: 'rotaract-3191',
         title: 'Rotaract 3191 Masterbrand',
         subtitle: 'District identity pack',

@@ -12,7 +12,7 @@ function Navbar() {
           <div className="flex flex-col gap-4 px-4 py-4 sm:px-5">
             <div className="flex items-center justify-between gap-3 lg:flex-nowrap">
               <NavLink to="/" end className="flex items-center gap-3 self-start">
-                <img src="/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand Simplified.png" alt="Rotaract District 3191 Logo" className="h-13.5 w-auto" />
+                <img src="/assets/brand-centre/2026-27/Rotaract 3191 CLA - Cranberry.png" alt="Rotaract District 3191 Logo" className="h-13.5 w-auto" />
               </NavLink>
 
               <div className="hidden flex-1 items-center justify-center px-4 lg:flex">
@@ -64,10 +64,8 @@ function Navbar() {
                 </nav>
               </div>
 
-              <div className="hidden items-center justify-between gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 sm:flex">
+              <div className="hidden items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 sm:flex">
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.26em] text-slate-500">Online</span>
-                  <span className="hidden h-2 w-2 rounded-full bg-slate-200 sm:inline-block" />
                   <span className="hidden text-[10px] font-semibold uppercase tracking-[0.28em] text-[#d41367] sm:inline-block">
                     Ready to take off
                   </span>
