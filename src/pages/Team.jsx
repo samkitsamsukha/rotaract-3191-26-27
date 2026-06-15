@@ -108,6 +108,279 @@ const zrrs = [
   }
 ];
 
+const council = [
+  {
+    id: 1,
+    avenue: "District Treasurer",
+    members: [
+      {
+        id: 1,
+        name: "Rtr. Dhruv Sundhesha",
+        position: "District Treasurer",
+        photo: "",
+      },
+      {
+        id: 2,
+        name: "Rtr. M V Karthik",
+        position: "District Treasurer",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 2,
+    avenue: "District Treasurer",
+    members: [
+      {
+        id: 1,
+        name: "Rtr. Dhanesh Menon",
+        position: "District Sergeant-at-Arms",
+        photo: "",
+      },
+      {
+        id: 2,
+        name: "Rtr. Smriti Subramaniam",
+        position: "District Sergeant-at-Arms",
+        photo: "",
+      },
+      {
+        id: 3,
+        name: "Rtr. Lokapriya R",
+        position: "District Sergeant-at-Arms",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 3,
+    avenue: "Club Service",
+    members: [
+      {
+        id: 1,
+        name: "PP Rtr. Nithin M",
+        position: "District Club Service Director",
+        photo: "",
+      },
+      {
+        id: 2,
+        name: "Rtr. Ayman Fathima",
+        position: "District Club Service Director",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 4,
+    avenue: "Community Service",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 5,
+    avenue: "International Service",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 6,
+    avenue: "Professional Development",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 7,
+    avenue: "Design and Visual Communication",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 8,
+    avenue: "Editorial",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 9,
+    avenue: "Social Media",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 10,
+    avenue: "Web and Tech",
+    members: [
+      {
+        id: 1,
+        name: "Rtr. Manoj B",
+        position: "District Web and Tech Director",
+        photo: "",
+      },
+      {
+        id: 2,
+        name: "Rtr. Samkit Samsukha",
+        position: "District Web and Tech Director",
+        photo: ""
+      }
+    ]
+  },
+  {
+    id: 11,
+    avenue: "Next Gen",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 12,
+    avenue: "Events",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 14,
+    avenue: "CSR + Outreach and Partnership",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 15,
+    avenue: "District Environment Chair",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 16,
+    avenue: "Membership Retention and Club Development",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 17,
+    avenue: "Learning Team",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 18,
+    avenue: "Resource and Operations",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 19,
+    avenue: "RYLA Chair",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 20,
+    avenue: "World Rotaract Week Chair",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  },
+  {
+    id: 21,
+    avenue: "Global Grant Chair",
+    members: [
+      {
+        id: 1,
+        name: "",
+        position: "",
+        photo: "",
+      },
+    ]
+  }
+]
+
 function StatCard({ label, value }) {
   return (
     <div className="rounded-2xl border border-pink-200 bg-[#fff8fb] px-6 py-4 shadow-sm">
