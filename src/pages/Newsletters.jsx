@@ -1,7 +1,4 @@
 
-
-const newsletterBlocks = ['Latest issue', 'Archive', 'Submission guidelines']
-
 function Newsletters() {
   return (
     <div>
