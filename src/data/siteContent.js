@@ -12,11 +12,11 @@ export const navItems = [
     label: 'About', 
     dropdown: [
       { label: 'About Rotaract', path: '/about' },
-      { label: 'About Rotaract 3191', path: '/about-3191' }
+      { label: 'About Rotaract 3191', path: '/about-3191' },
+      { label: 'Team', path: '/team' }
     ]
   },
   { label: 'Brand Center', path: '/brand-center' },
-  { label: 'Team', path: '/team' },
   { label: 'Showcase', path: 'https://showcase.rotaract3191.org/'}
 ]
 

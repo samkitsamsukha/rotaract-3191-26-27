@@ -15,6 +15,7 @@ import Zones from './pages/Zones.jsx'
 import './App.css'
 import AboutRotaract from './pages/AboutRotaract.jsx'
 import AboutRotaract3191 from './pages/AboutRotaract3191.jsx'
+import Documents from './pages/Documents.jsx'
 
 function App() {
   const [preloaderDone, setPreloaderDone] = useState(false)
@@ -33,6 +34,7 @@ function App() {
             <Route path="newsletters" element={<Newsletters />} />
             <Route path="brand-center" element={<BrandCenter />} />
             <Route path="brand-center/logos" element={<Logos />} />
+            <Route path="brand-center/documents" element={<Documents />} />
             <Route path="team" element={<Team />} />
             <Route path="calendar" element={<Calendar />} />
             <Route path="events" element={<Events />} />
