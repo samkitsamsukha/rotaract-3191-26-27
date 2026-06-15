@@ -7,28 +7,6 @@ import {
 } from "lucide-react";
 
 function Footer() {
-  const socials = [
-  {
-    label: "Instagram",
-    href: "https://instagram.com/rotaract3191",
-    icon: Instagram,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://linkedin.com",
-    icon: Linkedin,
-  },
-  {
-    label: "Facebook",
-    href: "https://facebook.com",
-    icon: Facebook,
-  },
-  {
-    label: "YouTube",
-    href: "https://youtube.com",
-    icon: Youtube,
-  },
-];
 
   return (
     <footer className="mx-4 mb-4 mt-16 sm:mx-6 lg:mx-8">
@@ -81,30 +59,7 @@ function Footer() {
 
           {/* Right */}
           <div className="flex items-center gap-2">
-            {socials.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={social.label}
-                className="
-                  group
-                  flex h-10 w-10 items-center justify-center
-                  rounded-xl
-                  border border-slate-200
-                  bg-slate-50
-                  text-slate-600
-                  transition-all duration-300
-                  hover:-translate-y-1
-                  hover:border-[#d41367]
-                  hover:bg-[#d41367]
-                  hover:text-white
-                "
-              >
-                {social.icon}
-              </a>
-            ))}
+            Social Icons to be added here
           </div>
         </div>
 
