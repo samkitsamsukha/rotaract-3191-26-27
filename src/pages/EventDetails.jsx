@@ -107,7 +107,7 @@ export default function EventDetails() {
               <h3 className="text-2xl font-bold text-slate-900 tracking-wide uppercase" style={{ fontFamily: "'Rajdhani','Inter',sans-serif" }}>
                 Event Sponsors
               </h3>
-              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 rounded-full bg-gradient-to-r from-orange-400 to-pink-500"></div>
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 rounded-full bg-linear-to-r from-orange-400 to-pink-500"></div>
             </div>
             
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 pt-4">

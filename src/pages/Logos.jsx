@@ -122,7 +122,7 @@ function Logos() {
                                 </p>
                             </div>
 
-                            <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 shadow-sm min-w-[220px]">
+                            <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 shadow-sm min-w-55">
                                 <div className="flex items-center justify-between">
                                     <div className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500">
                                         Asset Sectors
@@ -200,7 +200,7 @@ function Logos() {
                 {/* Modal */}
                 {modalCollection ? (
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 px-4 py-6 backdrop-blur-md">
-                        <div className="max-h-[90vh] w-full max-w-6xl overflow-hidden rounded-[2rem] bg-white shadow-[0_30px_100px_rgba(15,23,42,0.3)]">
+                        <div className="max-h-[90vh] w-full max-w-6xl overflow-hidden rounded-4xl bg-white shadow-[0_30px_100px_rgba(15,23,42,0.3)]">
 
                             {/* Modal Header */}
                             <div className="flex items-center justify-between border-b border-slate-200 px-5 py-4 sm:px-6">

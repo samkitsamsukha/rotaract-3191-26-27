@@ -26,7 +26,7 @@ export default function AboutRotaract3191() {
         <div className="mx-auto max-w-7xl px-4 py-8">
 
             {/* HERO */}
-            <section className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+            <section className="relative overflow-hidden rounded-4xl border border-slate-200 bg-white p-8 shadow-sm">
 
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,19,103,0.08),transparent_35%)]" />
 
@@ -66,7 +66,7 @@ export default function AboutRotaract3191() {
 
                     {/* MAP PLACEHOLDER */}
                     <div className="relative">
-                        <div className="aspect-square rounded-[2rem] border border-slate-200 bg-slate-50 overflow-hidden">
+                        <div className="aspect-square rounded-4xl border border-slate-200 bg-slate-50 overflow-hidden">
 
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,19,103,0.15),transparent_60%)]" />
 
@@ -111,9 +111,9 @@ export default function AboutRotaract3191() {
                 {telemetry.map((item) => (
                     <div
                         key={item.label}
-                        className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white"
+                        className="overflow-hidden rounded-4xl border border-slate-200 bg-white"
                     >
-                        <div className="h-2 bg-gradient-to-r from-[#d41367] via-pink-300 to-slate-900" />
+                        <div className="h-2 bg-linear-to-r from-[#d41367] via-pink-300 to-slate-900" />
 
                         <div className="p-6">
                             <p className="text-[10px] font-semibold tracking-[0.3em] text-slate-500">
@@ -137,7 +137,7 @@ export default function AboutRotaract3191() {
 
             <div className="grid gap-8 lg:grid-cols-2">
 
-                <div className="rounded-[2rem] border border-slate-200 bg-white p-8">
+                <div className="rounded-4xl border border-slate-200 bg-white p-8">
                     <p className="text-xs font-semibold tracking-[0.3em] text-slate-500">
                         DISTRICT OVERVIEW
                     </p>

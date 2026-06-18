@@ -178,7 +178,7 @@ export default function AboutRotaract() {
       <SectionHeader title="HISTORY OF ROTARACT" />
 
       <section className="grid gap-8 lg:grid-cols-2 items-center">
-        <div className=" aspect-[4/3] flex items-center justify-center">
+        <div className=" aspect-4/3 flex items-center justify-center">
           <img src="/assets/images/aboutus.webp" alt="" className="rounded-4xl border border-[#d41367]" />
         </div>
 
@@ -197,7 +197,7 @@ export default function AboutRotaract() {
               ["TODAY", "MISSION ACTIVE — 180+ Countries, Thousands of Clubs, One Global Family"],
             ].map(([year, title]) => (
               <div key={year} className="flex gap-4">
-                <div className="font-black text-[#d41367] min-w-[80px]">
+                <div className="font-black text-[#d41367] min-w-20">
                   {year}
                 </div>
 
