@@ -18,9 +18,9 @@ function Footer() {
         <div className="flex flex-col gap-4 px-5 py-4 lg:flex-row lg:items-center lg:justify-between">
 
           {/* Left */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center gap-4">
 
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#d41367]" />
               <span className="text-[10px] font-black tracking-[0.3em] text-[#d41367]">
                 DISTRICT ONLINE
@@ -29,13 +29,13 @@ function Footer() {
 
             <div className="hidden h-5 w-px bg-slate-200 md:block" />
 
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-sm font-black tracking-tight text-slate-900">
                 ROTARACT DISTRICT 3191
               </h3>
 
               <p className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
-                Connect • Partner • Grow
+                Fellowship through service
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ function Footer() {
           </div>
 
           {/* Right */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 justify-center">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
@@ -78,7 +78,7 @@ function Footer() {
           <div className="flex flex-col gap-2 text-center lg:flex-row lg:items-center lg:justify-between lg:text-left">
 
             <p className="text-[11px] tracking-[0.15em] text-slate-500 uppercase">
-              Flight Deck v2026 • Rotaract District 3191
+              Flight Deck v2026 | Web And Tech Squadron
             </p>
 
             <p className="text-[11px] tracking-[0.15em] text-slate-500 uppercase">
