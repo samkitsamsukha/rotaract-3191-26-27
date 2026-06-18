@@ -5,7 +5,7 @@ function Footer() {
       <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
 
         {/* Top telemetry strip */}
-        <div className="h-1 bg-gradient-to-r from-[#d41367] via-pink-300 to-slate-900" />
+        <div className="h-1 bg-linear-to-r from-[#d41367] via-pink-300 to-slate-900" />
 
         <div className="flex flex-col gap-4 px-5 py-4 lg:flex-row lg:items-center lg:justify-between">
 

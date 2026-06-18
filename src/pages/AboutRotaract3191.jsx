@@ -158,10 +158,8 @@ export default function AboutRotaract3191() {
                     </p>
                 </div>
 
-                <div className="rounded-[2rem] border border-dashed border-[#d41367] bg-pink-50 aspect-video flex items-center justify-center">
-                    <span className="font-bold text-[#d41367]">
-                        DISTRICT IMAGE / GROUP PHOTO
-                    </span>
+                <div className="aspect-video flex items-center justify-center">
+                    <img src="/assets/hero-bg.jpg" alt="" className="border border-dashed border-[#d41367] rounded-4xl"/>
                 </div>
 
             </div>

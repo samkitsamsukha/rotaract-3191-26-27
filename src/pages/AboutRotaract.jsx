@@ -3,43 +3,43 @@ import { NavLink } from "react-router-dom";
 const focusAreas = [
   {
     title: "Promoting Peace",
-    icon: "/assets/focus/peace.png",
+    icon: "/assets/areas-of-focus/AOF_peace_color_bottom_title_EN.webp",
     description:
       "Training leaders to foster understanding, empathy and conflict resolution.",
   },
   {
     title: "Fighting Disease",
-    icon: "/assets/focus/disease.png",
+    icon: "/assets/areas-of-focus/AOF_disease_color_bottom_title_EN.webp",
     description:
       "Supporting healthcare initiatives and improving access to treatment.",
   },
   {
     title: "Clean Water",
-    icon: "/assets/focus/water.png",
+    icon: "/assets/areas-of-focus/AOF_water_color_bottom_title_EN.webp",
     description:
       "Improving sanitation and access to clean water worldwide.",
   },
   {
     title: "Supporting Education",
-    icon: "/assets/focus/education.png",
+    icon: "/assets/areas-of-focus/AOF_education_color_bottom_title_EN.webp",
     description:
       "Creating opportunities through quality education and literacy.",
   },
   {
     title: "Maternal & Child Health",
-    icon: "/assets/focus/maternal.png",
+    icon: "/assets/areas-of-focus/AOF_maternal_color_bottom_title_EN.webp",
     description:
       "Improving health and wellbeing of mothers and children.",
   },
   {
     title: "Growing Local Economies",
-    icon: "/assets/focus/economy.png",
+    icon: "/assets/areas-of-focus/AOF_economic_color_bottom_title_EN.webp",
     description:
       "Supporting entrepreneurship and sustainable development.",
   },
   {
     title: "Protecting Environment",
-    icon: "/assets/focus/environment.png",
+    icon: "/assets/areas-of-focus/AOF_environment_color_bottom_title_EN.webp",
     description:
       "Driving environmental conservation and sustainability projects.",
   },
@@ -64,44 +64,38 @@ export default function AboutRotaract() {
     <div className="mx-auto max-w-7xl px-4 py-8">
       {/* HERO */}
       <section className="rounded-4xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div>
+        <div className="grid gap-8 md:grid-cols-3 items-center">
+          <div className="md:col-span-2">
             <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500">
               INTERNATIONAL NETWORK
             </p>
 
-            <h1 className="mt-3 text-4xl font-black text-slate-900 md:text-6xl">
-              ROTARACT
-            </h1>
-
             <p className="mt-6 text-slate-600 leading-relaxed">
-              Rotaract is a global network of young leaders committed to
-              community service, leadership development and international
-              understanding.
-            </p>
+              Rotaract is a <span className="font-semibold text-slate-900">global movement of young leaders, changemakers, and professionals</span> dedicated to creating meaningful impact through service, innovation, and collaboration. Operating in over{" "}
+              <span className="font-semibold text-[#d41367]">180+ countries</span>,
+              Rotaract empowers individuals to transform ideas into action while
+              fostering a culture of leadership, fellowship, and lifelong learning.
+              <br />
+              <br />
+              Through community-driven initiatives, professional development
+              opportunities, international partnerships, and humanitarian projects,
+              Rotaractors work together to address some of the world's most pressing
+              challenges. Whether it is{" "}
+              <span className="font-semibold text-slate-900">
+                promoting peace, supporting education, protecting the environment,
+                improving healthcare, or strengthening local economies
+              </span>
+              , every project is rooted in the belief that even the smallest actions
+              can create lasting change.
+              <br />
+              <br />
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              {[
-                "180+ Countries",
-                "10,000+ Clubs",
-                "200,000+ Members",
-                "Founded 1968",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
+            </p>
           </div>
 
           {/* IMAGE */}
-          <div className="rounded-3xl border border-dashed border-[#d41367] bg-pink-50 aspect-video flex items-center justify-center">
-            <span className="font-bold text-[#d41367]">
-              ROTARACT HERO IMAGE
-            </span>
+          <div className="rounded-3xl  aspect-video flex items-center justify-center">
+            <img src="/assets/brand-centre/2026-27/Rotaract Masterbrand.png" alt="" />
           </div>
         </div>
       </section>
@@ -116,8 +110,19 @@ export default function AboutRotaract() {
           </h3>
 
           <p className="mt-4 text-slate-600 leading-relaxed">
-            Rotaract empowers young people to create lasting change in
-            themselves, their communities and around the world.
+            More than just a service organization, Rotaract serves as a{" "}
+            <span className="font-semibold text-[#d41367]">
+              launchpad for leadership and personal growth
+            </span>
+            , enabling young people to build meaningful connections across cultures,
+            develop professional skills, and become responsible global citizens.
+            United by a shared commitment to{" "}
+            <span className="font-bold text-slate-900">
+              Service Above Self
+            </span>
+            , Rotaractors continue to inspire positive transformation in their
+            communities while creating a stronger, more connected world for future
+            generations.
           </p>
         </div>
 
@@ -155,22 +160,13 @@ export default function AboutRotaract() {
           >
             <div className="flex items-center justify-between">
               <div className="h-3 w-3 rounded-full bg-[#d41367]" />
-
-              <span className="text-xs tracking-[0.3em] text-slate-500 uppercase">
-                ACTIVE
-              </span>
             </div>
 
             <div className="mt-5 flex justify-center">
-              <div className="h-24 w-24 rounded-full border border-dashed border-[#d41367] flex items-center justify-center">
-                LOGO
+              <div className="w-48 rounded-full flex items-center justify-center">
+                <img src={area.icon} alt={area.title} />
               </div>
             </div>
-
-            <h3 className="mt-5 text-center text-xl font-black">
-              {area.title}
-            </h3>
-
             <p className="mt-4 text-center text-slate-600">
               {area.description}
             </p>
@@ -181,18 +177,24 @@ export default function AboutRotaract() {
       {/* HISTORY */}
       <SectionHeader title="HISTORY OF ROTARACT" />
 
-      <section className="grid gap-8 lg:grid-cols-2">
-        <div className="rounded-4xl border border-dashed border-[#d41367] bg-pink-50 aspect-[4/3] flex items-center justify-center">
-          HISTORY IMAGE
+      <section className="grid gap-8 lg:grid-cols-2 items-center">
+        <div className=" aspect-[4/3] flex items-center justify-center">
+          <img src="/assets/images/aboutus.webp" alt="" className="rounded-4xl border border-[#d41367]" />
         </div>
 
         <div className="rounded-4xl border border-slate-200 bg-white p-6">
           <div className="space-y-6">
             {[
-              ["1968", "First Rotaract Club Chartered"],
-              ["1980s", "Global Expansion"],
-              ["2000s", "Thousands of Clubs Worldwide"],
-              ["Today", "Global Movement"],
+              ["1968", "MISSION INITIATED — First Rotaract Club Chartered"],
+              ["1968", "GLOBAL DEPLOYMENT — Rotaract Adopted by Rotary International"],
+              ["1969", "INDIA ENTRY — First Indian Rotaract Club Chartered"],
+              ["1980s", "WORLD EXPANSION — Presence Established Across Continents"],
+              ["1990s", "SERVICE SCALE-UP — Large Community Impact Projects Begin"],
+              ["2013", "ELEVATE ROTARACT — Leadership Pathways Enhanced"],
+              ["2019", "HISTORIC RECOGNITION — Rotaract Becomes Rotary Membership Type"],
+              ["2020", "AUTONOMY UPGRADE — Greater Club Flexibility Introduced"],
+              ["2022", "NEXT-GEN GROWTH — Rapid Global Membership Expansion"],
+              ["TODAY", "MISSION ACTIVE — 180+ Countries, Thousands of Clubs, One Global Family"],
             ].map(([year, title]) => (
               <div key={year} className="flex gap-4">
                 <div className="font-black text-[#d41367] min-w-[80px]">

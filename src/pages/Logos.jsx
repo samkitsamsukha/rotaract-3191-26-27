@@ -1,208 +1,6 @@
 import { useMemo, useState } from 'react'
 import JSZip from 'jszip'
-
-const logoCollections = [
-    {
-        id: 'rotaract-3191-cla',
-        title: 'Rotaract 3191 Masterbrand with Presidential Message 2026-27',
-        subtitle: 'District identity pack',
-        cover: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - Cranberry.png',
-        zipName: 'Rotaract3191MasterbrandPM.zip',
-        zipLabel: 'Acquire ZIP',
-        variants: [
-            {
-                label: 'Primary',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - Cranberry.png',
-            },
-            {
-                label: 'White',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - White.png',
-            },
-            {
-                label: 'Black',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 CLA - Black.png',
-            },
-        ],
-    },
-    {
-        id: 'pm-2026-27',
-        title: 'Presidential Message 2026-27: Create Lasting Impact',
-        subtitle: 'President Commands',
-        cover: '/assets/brand-centre/2026-27/Create Lasting Impact - Plain.png',
-        zipName: 'CreateLastingImpact.zip',
-        zipLabel: 'Acquire ZIP',
-        variants: [
-            {
-                label: 'Primary',
-                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Plain.png',
-            },
-            {
-                label: 'Cranberry Box',
-                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Box Red.png',
-            },
-            {
-                label: 'Azure Box',
-                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Box.png',
-            },
-            {
-                label: 'Horizontal Cranberry',
-                file: '/assets/brand-centre/2026-27/Create Lasting Impact - Horizontal.png',
-            },
-        ],
-    },
-    {
-        id: 'rotaract-3191',
-        title: 'Rotaract 3191 Masterbrand',
-        subtitle: 'District identity pack',
-        cover: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand.png',
-        zipName: 'Rotaract3191Masterbrand.zip',
-        zipLabel: 'Acquire ZIP',
-        variants: [
-            {
-                label: 'Primary',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand.png',
-            },
-            {
-                label: 'Simplified',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand Simplified.png',
-            },
-            {
-                label: 'White',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand - White.png',
-            },
-            {
-                label: 'Black',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand - Black.png',
-            },
-            {
-                label: 'White Simplified',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand Simplified - White.png',
-            },
-            {
-                label: 'Black Simplified',
-                file: '/assets/brand-centre/2026-27/Rotaract 3191 Masterbrand Simplified - Black.png',
-            },
-        ],
-    },
-    {
-        id: 'rotaract',
-        title: 'Rotaract Masterbrand',
-        subtitle: 'Core club identity',
-        cover: '/assets/brand-centre/2026-27/Rotaract Masterbrand.png',
-        zipName: 'RotaractMasterbrand.zip',
-        zipLabel: 'Acquire ZIP',
-        variants: [
-            {
-                label: 'Primary',
-                file: '/assets/brand-centre/2026-27/Rotaract Masterbrand.png',
-            },
-            {
-                label: 'Simplified',
-                file: '/assets/brand-centre/2026-27/Rotaract Masterbrand Simplified.png',
-            },
-            {
-                label: 'White',
-                file: '/assets/brand-centre/2026-27/Rotaract Masterbrand - White.png',
-            },
-            {
-                label: 'Black',
-                file: '/assets/brand-centre/2026-27/Rotaract Masterbrand - Black.png',
-            },
-            {
-                label: 'Simplified Black',
-                file: '/assets/brand-centre/2026-27/Rotaract Masterbrand Simplified - Black.png',
-            },
-            {
-                label: 'Rotaract Simple',
-                file: '/assets/brand-centre/2026-27/Rotaract-Simple_REV.png',
-            },
-        ],
-    },
-    {
-        id: 'rotary',
-        title: 'Rotary Masterbrand',
-        subtitle: 'Rotary identity pack',
-        cover: '/assets/brand-centre/2026-27/Rotary Masterbrand.png',
-        zipName: 'RotaryMasterbrand.zip',
-        zipLabel: 'Acquire ZIP',
-        variants: [
-            {
-                label: 'Primary',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand.png',
-            },
-            {
-                label: 'Simplified',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand Simplified.png',
-            },
-            {
-                label: 'White',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand - White.png',
-            },
-            {
-                label: 'Black',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand - Black.png',
-            },
-            {
-                label: 'White & Gold',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand - White & Gold.png',
-            },
-            {
-                label: 'Simplified White & Gold',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand Simplified - White & Gold.png',
-            },
-            {
-                label: 'Simplified White',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand Simplified - White.png',
-            },
-            {
-                label: 'Simplified Black',
-                file: '/assets/brand-centre/2026-27/Rotary Masterbrand Simplified - Black.png',
-            },
-        ],
-    },
-    {
-        id: 'rotary-3191',
-        title: 'Rotary 3191 Masterbrand',
-        subtitle: 'District-level rotary assets',
-        cover: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand.png',
-        zipName: 'Rotary3191Masterbrand.zip',
-        zipLabel: 'Acquire ZIP',
-        variants: [
-            {
-                label: 'Primary',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand.png',
-            },
-            {
-                label: 'Simplified',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand Simplified.png',
-            },
-            {
-                label: 'White',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand - White.png',
-            },
-            {
-                label: 'Black',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand - Black.png',
-            },
-            {
-                label: 'White & Gold',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand - White & Gold.png',
-            },
-            {
-                label: 'Simplified White & Gold',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand Simplified - White & Gold.png',
-            },
-            {
-                label: 'Simplified White',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand Simplified - White.png',
-            },
-            {
-                label: 'Simplified Black',
-                file: '/assets/brand-centre/2026-27/Rotary 3191 Masterbrand Simplified - Black.png',
-            },
-        ],
-    },
-]
+import { logoCollections } from '../data/logos.js'
 
 function LogoCard({ collection, onPreview }) {
     return (
@@ -225,14 +23,7 @@ function LogoCard({ collection, onPreview }) {
 
             <div className="flex flex-1 flex-col gap-4 p-5">
                 <p className="text-sm leading-6 text-slate-500">{collection.subtitle}</p>
-                <div className="mt-auto flex flex-wrap gap-3">
-                    <button
-                        type="button"
-                        onClick={() => onPreview(collection)}
-                        className="cursor-pointer inline-flex items-center justify-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
-                    >
-                        Preview
-                    </button>
+                <div className="mt-auto flex flex-wrap gap-3 justify-center">
                     <a
                         href={collection.variants[0].file}
                         Acquire
@@ -246,6 +37,13 @@ function LogoCard({ collection, onPreview }) {
                         className="cursor-pointer inline-flex items-center justify-center rounded-full border border-[#d41367]/20 bg-[#d41367]/10 px-4 py-2 text-sm font-semibold text-[#d41367] transition hover:bg-[#d41367]/15"
                     >
                         {collection.zipLabel}
+                    </button>
+                    <button
+                        type="button"
+                        onClick={() => onPreview(collection)}
+                        className="cursor-pointer inline-flex items-center justify-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                    >
+                        Preview
                     </button>
                 </div>
             </div>
@@ -419,7 +217,7 @@ function Logos() {
                                 <button
                                     type="button"
                                     onClick={() => setActiveCollection(null)}
-                                    className="cursor-pointer rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100"
+                                    className="cursor-pointer rounded-full border border-red-200 text-red-500 font-semibold bg-red-50 px-4 py-2 text-sm  transition hover:bg-red-100"
                                 >
                                     Exit Deck
                                 </button>
@@ -459,7 +257,7 @@ function Logos() {
                                             <button
                                                 type="button"
                                                 onClick={() => AcquireZip(modalCollection)}
-                                                className="inline-flex items-center justify-center rounded-full bg-[#d41367] px-5 py-2.5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:shadow-[0_0_25px_rgba(212,19,103,0.35)]"
+                                                className="inline-flex items-center justify-center rounded-full bg-[#d41367] px-5 py-2.5 text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:shadow-[0_0_25px_rgba(212,19,103,0.35)] cursor-pointer"
                                             >
                                                 Deploy Package
                                             </button>
