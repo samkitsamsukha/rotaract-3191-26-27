@@ -1,3 +1,11 @@
+export const socialLinks = [
+  { logo: '/assets/icons/instagram.png', href: 'https://www.instagram.com/rotaract.3191/' },
+  { logo: '/assets/icons/x.png', href: 'https://x.com/rotaract3191' },
+  { logo: '/assets/icons/facebook.png', href: 'https://www.facebook.com/rotaract3191' },
+  { logo: '/assets/icons/linkedin.png', href: 'https://www.linkedin.com/company/rotaract3191/' },
+  { logo: '/assets/icons/youtube.png', href: 'https://www.youtube.com/@rotaract3191' },
+]
+
 function Footer() {
 
   return (
@@ -51,7 +59,17 @@ function Footer() {
 
           {/* Right */}
           <div className="flex items-center gap-2">
-            Social Icons to be added here
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center rounded-full border border-slate-200 bg-slate-50 p-2 text-slate-600 hover:bg-slate-200"
+              >
+                <img src={link.logo} alt={link.label} className="h-4 w-4" />
+              </a>
+            ))}
           </div>
         </div>
 
